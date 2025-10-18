@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ce projet regroupe tous les projets que j'ai réalisé" />
+
+    <script src="https://kit.fontawesome.com/2f08e10c1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/style1.css" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header id="headerBloc" class="header-bloc">
+      <div class="header-content">
+        <!-- <div class="logo-container">
+          <img src="./assets/logo/svg/logo-transparent-svg.svg" alt="" />
+        </div> -->
+        <div class="burger" id="toggle-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="navigation" id="menu-navlink">
+          <div>
+            <ul class="menu-navLink-content">
+              <li>
+                <a href="#about" class="navigation-content"><span>À propos</span></a>
+              </li>
+              <li>
+                <a href="#projects" class="navigation-content"><span>Projets</span></a>
+              </li>
+              <li>
+                <a href="#services" class="navigation-content"><span>Services</span></a>
+              </li>
+              <li>
+                <a href="#contact" class="navigation-content"><span>Contact</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="dropdown-menu" id="dropdown-menu">
+          <ul>
+            <li>
+              <a href="#about" class="navigation-content"
+                ><span class="menu-mobile-link">À propos</span></a
+              >
+            </li>
+            <li>
+              <a href="#services" class="navigation-content"
+                ><span class="menu-mobile-link">Services</span></a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="navigation-content"
+                ><span class="menu-mobile-link">Projets</span></a
+              >
+            </li>
+            <li>
+              <a href="#contact" p class="navigation-content"
+                ><span class="menu-mobile-link">Contact</span></a
+              >
+            </li>
+          </ul>
+
+          <div class="action-button-container">
+            <a href="#contact" class="action-button">Contactez-moi</a>
+          </div>
+        </div>
+        <div class="contact-header">
+          <a href="#contact" class="action-button">Contactez-moi</a>
+        </div>
+
+        <div class="social-media-link">
+          <div class="link">
+            <a href="https://www.linkedin.com/in/oussama-beghdi/" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <div class="link">
+            <a href="https://github.com/Oussamabeghdi?tab=repositories" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="bloc-hero-before">
+          <div class="heading">
+            <h1>WebDev Solutions</h1>
+          </div>
+          <div class="sub-heading">
+            <p>Créateur de Solutions Web : Site Web Applications Référencement</p>
+          </div>
+          <div class="contact-btn-hero">
+            <a href="#contact" class="action-button">Contactez-moi</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="main-content">
+      <section class="services" id="services">
+        <div><h2>Services & Compétences</h2></div>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Développement Front-End</h3>
+            <p>
+              Création d’interfaces web modernes et responsives en HTML, CSS, JavaScript et React.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-brands fa-wordpress"></i>
+            <h3>Création de sites WordPress</h3>
+            <p>
+              Installation, personnalisation de thèmes et optimisation SEO pour des sites
+              professionnels.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-database"></i>
+            <h3>Back-End & API</h3>
+            <p>
+              Développement d’APIs sécurisées avec Node.js, Express et gestion de bases de données
+              MongoDB.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <h3>Design Responsive</h3>
+            <p>Conception mobile-first et optimisation des performances pour tous les supports.</p>
+          </div>
+          <div class="service-card">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Maintenance & Optimisation</h3>
+            <p>
+              Suivi, mise à jour et amélioration continue des sites web pour garantir sécurité,
+              rapidité et compatibilité.
+            </p>
+          </div>
+          <div class="service-card">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <h3>Déploiement & Hébergement</h3>
+            <p>
+              Mise en ligne d’applications sur des plateformes comme Northflank, Vercel ou Render
+              avec gestion des environnements.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div><h2>A propos</h2></div>
+        <div>
+          <div class="about-content">
+            <p>
+              Après plusieurs années passées dans le domaine technique, j’ai choisi de me
+              reconvertir vers le développement web pour donner une nouvelle direction à ma
+              carrière. Aujourd’hui, à travers ma micro-entreprise, je crée des sites modernes et
+              adaptés aux besoins de chacun, notamment avec WordPress, tout en continuant à
+              développer mes compétences en HTML, CSS, JavaScript, React et Node.js. J’aime
+              apprendre en permanence, relever de nouveaux défis et trouver des solutions simples et
+              efficaces pour concrétiser les idées de mes clients.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="projects">
+        <div><h2>Mes Projets</h2></div>
+        <div class="projects-items">
+          <!-- Projet HTML / CSS -->
+          <div class="project-card">
+            <video id="maVideo" controls loop width="640">
+              <source src="./assets/videos/tripadvisor.mp4" type="video/mp4" />
+              Votre navigateur ne supporte pas la vidéo.
+            </video>
+            <h3>Clone de TripAdvisor</h3>
+            <p>
+              Reproduction du site TripAdvisor en HTML et CSS. Travail sur la mise en page, la
+              typographie et les effets de survol.
+            </p>
+            <a href="https://clone-tripadvisor-test.netlify.app" target="_blank" class="btn"
+              >Voir le projet</a
+            >
+          </div>
+
+          <!-- Projet JavaScript -->
+          <div class="project-card">
+            <video id="maVideo" controls loop width="640">
+              <source src="./assets/videos/projet-front-ifpa.mp4" type="video/mp4" />
+              Votre navigateur ne supporte pas la vidéo.
+            </video>
+            <h3>Projet ECF 1 (JS)</h3>
+            <p>
+              Création d’un site dynamique à partir d’une maquette : gestion de thèmes colorés et
+              d’interactions utilisateur en JavaScript.
+            </p>
+            <a href="#" target="_blank" class="btn">Voir le projet</a>
+          </div>
+
+          <!-- Projet React -->
+          <div class="project-card">
+            <video id="maVideo" controls loop width="640">
+              <source src="./assets/videos/MARVEL2.mp4" type="video/mp4" />
+              Votre navigateur ne supporte pas la vidéo.
+            </video>
+            <h3>L’univers de Marvel</h3>
+            <p>
+              Application complète développée en React avec Node.js et MongoDB : recherche, favoris,
+              affichage dynamique de comics et personnages.
+            </p>
+            <a href="https://site-marvel-ob.netlify.app" target="_blank" class="btn"
+              >Voir le projet</a
+            >
+          </div>
+
+          <!-- Projet WordPress -->
+          <div class="project-card">
+            <video id="maVideo" controls loop width="640">
+              <source src="./assets/videos/fastlink.mp4" type="video/mp4" />
+              Votre navigateur ne supporte pas la vidéo.
+            </video>
+            <!-- <img src="./assets/images/site-vape-projet.jpg" alt="Projet WordPress - F@stlink" /> -->
+            <h3>Fastlink</h3>
+            <p>
+              Création d’un site WordPress avec un design moderne et responsive, optimisation des
+              images et intégration SEO.
+            </p>
+            <a href="https://www.fastlink-group.fr" target="_blank" class="btn">Voir le site</a>
+          </div>
+          <div class="project-card">
+            <video controls width="640">
+              <source
+                src="./assets/videos/Enregistrement-de-l’écran-2025-10-16-à-17.09.48.mp4"
+                type="video/mp4"
+              />
+              Votre navigateur ne supporte pas la vidéo.
+            </video>
+            <h3>Amazighi EMS</h3>
+            <p>
+              Création d’un site WordPress avec un design moderne et responsive, optimisation des
+              images et intégration SEO.
+            </p>
+            <a href="https://www.amazighi-ems.com" target="_blank" class="btn">Voir le site</a>
+          </div>
+          <div class="project-card">
+            <video controls loop width="640">
+              <source src="./assets/videos/Sans-titre.mp4" type="video/mp4" />
+              Votre navigateur ne supporte pas la vidéo.
+            </video>
+            <h3>Horizon-vert</h3>
+            <p>
+              Création d’un site WordPress avec un design moderne et responsive, optimisation des
+              images et intégration SEO.
+            </p>
+            <a href="https://www.horizon-vert.pro" target="_blank" class="btn">Voir le site</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div><h2>Contact</h2></div>
+        <div class="contact-container">
+          <p>Vous souhaitez collaborer ou me confier un projet ? N’hésitez pas à me contacter !</p>
+          <!-- <form action="https://formspree.io/f/xqayneon" method="post" class="contact-form">
+            <input type="text" name="name" placeholder="Votre nom" required />
+            <input type="email" name="email" placeholder="Votre email" required />
+            <input type="phone" name="phone" placeholder="Votre télephone" />
+
+            <textarea name="message" rows="5" placeholder="Votre message..."></textarea>
+            <button type="submit" class="contact-button">Envoyer</button>
+          </form> -->
+          <form id="contactForm" class="contact-form">
+            <input type="text" name="username" placeholder="Votre nom" required />
+            <input type="email" name="email" placeholder="Votre email" required />
+            <input type="tel" name="phone" placeholder="Votre télephone" />
+
+            <textarea name="message" rows="5" placeholder="Votre message..."></textarea>
+            <button type="submit" class="contact-button">Envoyer</button>
+          </form>
+          <p id="responseMessage"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 - Portfolio de Oussama BEGHDI | Développeur Web</p>
+      <div class="footer-social">
+        <a href="https://github.com/Oussamabeghdi" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/oussama-beghdi/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
