@@ -40,7 +40,7 @@ form.addEventListener("submit", async (e) => {
     tel: form.elements["phone"].value,
     message: form.elements["message"].value,
   };
-
+  form.reset();
   // envoie la requête vers ton back Node.js
   const response = await fetch("https://portfolio-on22.onrender.com/send-email", {
     method: "POST",
