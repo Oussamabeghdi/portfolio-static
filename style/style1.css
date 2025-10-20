@@ -30,6 +30,9 @@ hr {
   background-color: #face4d;
   border-radius: 5px;
 }
+section {
+  scroll-margin-top: 95px;
+}
 /************** HEADER *************/
 .header-bloc {
   margin: 0 auto;
@@ -305,6 +308,9 @@ hr {
 .download-cv:hover {
   color: white;
   background: #102136;
+}
+#cv {
+  scroll-margin-top: 95px;
 }
 /***************** PROJECTS *****************/
 .projects {
