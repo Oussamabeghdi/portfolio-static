@@ -19,9 +19,9 @@
   <body>
     <header id="headerBloc" class="header-bloc">
       <div class="header-content">
-        <!-- <div class="logo-container">
-          <img src="./assets/logo/svg/logo-transparent-svg.svg" alt="" />
-        </div> -->
+        <div class="phoneNbr">
+          <a href="tel:0637748223"><i class="fa-solid fa-phone"></i><span>06 37 74 82 23</span></a>
+        </div>
         <div class="burger" id="toggle-btn">
           <i class="fa-solid fa-bars"></i>
         </div>
@@ -39,6 +39,9 @@
               </li>
               <li>
                 <a href="#contact" class="navigation-content"><span>Contact</span></a>
+              </li>
+              <li>
+                <a href="#cv" class="navigation-content"><span>CV</span></a>
               </li>
             </ul>
           </div>
@@ -66,10 +69,15 @@
                 ><span class="menu-mobile-link">Contact</span></a
               >
             </li>
+            <li>
+              <a href="#cv" class="navigation-content"><span>CV</span></a>
+            </li>
           </ul>
 
           <div class="action-button-container">
-            <a href="#contact" class="action-button">Contactez-moi</a>
+            <a class="action-button" href="tel:0637748223"
+              ><i class="fa-solid fa-phone"></i><span>06 37 74 82 23</span></a
+            >
           </div>
         </div>
         <div class="contact-header">
@@ -106,6 +114,7 @@
       </div>
     </section>
     <main class="main-content">
+      <hr />
       <section class="services" id="services">
         <div><h2>Services & Compétences</h2></div>
         <div class="services-grid">
@@ -138,7 +147,7 @@
           <div class="service-card">
             <i class="fa-solid fa-mobile-screen"></i>
             <h3>Design Responsive</h3>
-            <p>Conception mobile-first et optimisation des performances pour tous les supports.</p>
+            <p>Conception responsive et optimisation des performances pour tous les supports.</p>
           </div>
           <div class="service-card">
             <i class="fa-solid fa-screwdriver-wrench"></i>
@@ -152,28 +161,39 @@
             <i class="fa-solid fa-cloud-arrow-up"></i>
             <h3>Déploiement & Hébergement</h3>
             <p>
-              Mise en ligne d’applications sur des plateformes comme Northflank, Vercel ou Render
-              avec gestion des environnements.
+              Mise en ligne d’applications sur des plateformes comme Northflank, Vercel, Render ou
+              ionos avec gestion des environnements.
             </p>
           </div>
         </div>
       </section>
+      <hr />
       <section id="about" class="about">
-        <div><h2>A propos</h2></div>
-        <div>
+        <div><h2>A propos de moi</h2></div>
+        <div><img src="" alt="" /></div>
+        <div class="about-bloc">
           <div class="about-content">
             <p>
-              Après plusieurs années passées dans le domaine technique, j’ai choisi de me
-              reconvertir vers le développement web pour donner une nouvelle direction à ma
-              carrière. Aujourd’hui, à travers ma micro-entreprise, je crée des sites modernes et
-              adaptés aux besoins de chacun, notamment avec WordPress, tout en continuant à
-              développer mes compétences en HTML, CSS, JavaScript, React et Node.js. J’aime
-              apprendre en permanence, relever de nouveaux défis et trouver des solutions simples et
-              efficaces pour concrétiser les idées de mes clients.
+              Je suis Oussama Beghdi developpeur web. <br />Après plusieurs années passées dans le
+              domaine technique, j’ai choisi de me reconvertir vers le développement web pour donner
+              une nouvelle direction à ma carrière. Aujourd’hui, à travers ma micro-entreprise, je
+              crée des sites modernes et adaptés aux besoins de chacun, notamment avec WordPress,
+              tout en continuant à développer mes compétences en HTML, CSS, JavaScript, React et
+              Node.js. J’aime apprendre en permanence, relever de nouveaux défis et trouver des
+              solutions simples et efficaces pour concrétiser les idées de mes clients.
             </p>
+          </div>
+          <div>
+            <a
+              class="download-cv"
+              href="./assets/documents/Oussama-Beghdi.pdf"
+              download="Oussama-Beghdi.pdf"
+              >Téléchargez mon CV</a
+            >
           </div>
         </div>
       </section>
+      <hr />
       <section id="projects" class="projects">
         <div><h2>Mes Projets</h2></div>
         <div class="projects-items">
@@ -265,7 +285,7 @@
           </div>
         </div>
       </section>
-
+      <hr />
       <section id="contact" class="contact">
         <div><h2>Contact</h2></div>
         <div class="contact-container">
@@ -300,6 +320,18 @@
         <a href="https://www.linkedin.com/in/oussama-beghdi/" target="_blank"
           ><i class="fa-brands fa-linkedin"></i
         ></a>
+      </div>
+      <div class="footer-contact">
+        <div>
+          <a href="tel:0637748223" target="_blank"
+            ><i class="fa-solid fa-phone"></i><span>06 37 74 82 23</span></a
+          >
+        </div>
+        <div>
+          <a href="mailto:ae.wbdb@gmail.com" target="_blank"
+            ><i class="fa-solid fa-envelope"></i><span>ae.wbdb@gmail.com</span></a
+          >
+        </div>
       </div>
     </footer>
     <script src="./index.js"></script>
