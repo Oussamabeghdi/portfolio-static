@@ -175,6 +175,9 @@ section {
 .dropdown-menu.open {
   height: 350px;
 }
+.dropdown-menu.close {
+  display: none;
+}
 .dropdown-menu li {
   padding: 0.7rem;
   display: flex;
@@ -249,14 +252,14 @@ section {
   color: #102136;
 }
 .heading h1 {
-  color: white;
+  color: #102136;
   font-size: 36px;
   font-weight: 700;
 }
 
 .sub-heading p {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -269,12 +272,31 @@ section {
 /***************** ABOUT *****************/
 .about {
   padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.my-photo {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 80px;
+  background: url("../assets/images/ma-photo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.my-photo,
+img {
+  border-radius: 50%;
 }
 .about-bloc {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100%;
+
   gap: 40px;
 }
 .about h2 {
@@ -289,7 +311,9 @@ section {
   line-height: 1.6;
   color: #333;
 }
-
+.presentation > span {
+  font-weight: 600;
+}
 .about-content h3 {
   font-size: 22px;
   margin-bottom: 15px;

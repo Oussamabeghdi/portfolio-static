@@ -7,6 +7,15 @@ toggleBtn.onclick = () => {
   toggleBtnIcon.className = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
 };
 
+// fermeture du menu deroulant au clic sur un lien
+const links = document.querySelectorAll(".menu-mobile-link");
+links.forEach((link) => {
+  link.onclick = () => {
+    dropdownMenu.classList.remove("open");
+    toggleBtnIcon.className = "fa-solid fa-bars";
+  };
+});
+
 window.addEventListener("scroll", function () {
   const header = document.getElementById("headerBloc");
   if (window.scrollY > 50) {
