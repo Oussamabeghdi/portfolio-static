@@ -60,3 +60,21 @@ form.addEventListener("submit", async (e) => {
   const result = await response.json();
   document.getElementById("responseMessage").textContent = result.message;
 });
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+// afficher / cacher le bouton
+window.onscroll = () => {
+  if (document.documentElement.scrollTop > 300) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+};
+
+// remonter en haut au clic
+scrollTopBtn.onclick = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};

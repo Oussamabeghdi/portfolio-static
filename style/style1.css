@@ -33,7 +33,9 @@ hr {
 section {
   scroll-margin-top: 95px;
 }
-/************** HEADER *************/
+/***************************************/
+/************** HEADER *****************/
+/***************************************/
 .header-bloc {
   margin: 0 auto;
   padding: 0 40px;
@@ -75,9 +77,13 @@ section {
   display: flex;
   justify-content: center;
   flex: 1;
-  max-width: 50%;
+  max-width: 58%;
 }
-
+.menu-navLink-content {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
 .navigation-content {
   color: rgb(250, 250, 250);
   text-align: center;
@@ -137,8 +143,9 @@ section {
 .social-media-link a:hover {
   color: #face4d;
 }
-
+/***************************************/
 /************** BURGER MENU *************/
+/***************************************/
 .burger {
   position: absolute;
   right: 5%;
@@ -148,14 +155,9 @@ section {
   color: white;
   z-index: 1100;
 }
-
-/************** MENU LATÉRAL (mobile) *************/
-
-.menu-navLink-content {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-}
+/***************************************/
+/************ MENU(mobile) *************/
+/***************************************/
 
 .dropdown-menu {
   display: none;
@@ -199,12 +201,15 @@ section {
 .action-button {
   scale: 0.2s;
 }
+/***************************************/
 /***************** MAIN ****************/
+/***************************************/
 .main-content {
   margin: 0 auto;
 }
-
+/***************************************/
 /* --- HERO SECTION --- */
+/***************************************/
 .hero {
   position: relative;
   z-index: 1;
@@ -242,7 +247,7 @@ section {
   max-width: 100%;
   width: 100%;
   width: 100svw;
-  background: #6353c34e;
+  background: #1800a74e;
   box-shadow: 0 0 2px #face4d;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
@@ -252,15 +257,17 @@ section {
   color: #102136;
 }
 .heading h1 {
-  color: #102136;
-  font-size: 36px;
+  color: #ffffff;
+  font-size: 34px;
   font-weight: 700;
+  padding: 7px;
 }
 
 .sub-heading p {
   color: white;
   font-size: 18px;
   font-weight: 700;
+  padding: 5px;
 }
 
 .contact-btn-hero {
@@ -268,8 +275,9 @@ section {
   width: 200px;
   padding-top: 30px;
 }
-
-/***************** ABOUT *****************/
+/***************************************/
+/***************** ABOUT ***************/
+/***************************************/
 .about {
   padding: 80px 0;
   display: flex;
@@ -336,7 +344,9 @@ img {
 #cv {
   scroll-margin-top: 95px;
 }
-/***************** PROJECTS *****************/
+/***************************************/
+/*************** PROJECTS **************/
+/***************************************/
 .projects {
   padding: 100px 0;
   background: #f9f9f9;
@@ -410,8 +420,9 @@ img {
   background: #102136;
   color: white;
 }
-
-/***************** SERVICES *****************/
+/***************************************/
+/************* SERVICES ****************/
+/***************************************/
 .services {
   padding: 50px 0;
   background: white;
@@ -467,8 +478,9 @@ img {
   color: #444;
   line-height: 1.5;
 }
-
-/***************** CONTACT *****************/
+/***************************************/
+/***************** CONTACT *************/
+/***************************************/
 .contact {
   padding: 100px 0;
   background: #f9f9f9;
@@ -519,8 +531,9 @@ img {
   background: #102136;
   color: white;
 }
-
-/***************** FOOTER *****************/
+/***************************************/
+/***************** FOOTER **************/
+/***************************************/
 .footer {
   background: #102136;
   color: white;
@@ -557,8 +570,32 @@ img {
 .footer-contact span:hover {
   color: #face4d;
 }
+/* ********boutonScrollTop********** */
 
-/***************** RESPONSIVE *****************/
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: #102136;
+  color: white;
+  border: none;
+  border-radius: 10%;
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #0056b3;
+}
+
+/***************************************/
+/************** RESPONSIVE *************/
+/***************************************/
 @media (max-width: 992px) {
   .bloc-hero-before {
     height: 250px;
@@ -603,7 +640,7 @@ img {
     clip-path: ellipse(88% 100% at 50% 100%);
   }
   .heading h1 {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .service-card {
