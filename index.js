@@ -7,7 +7,6 @@ toggleBtn.onclick = () => {
   toggleBtnIcon.className = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
 };
 
-// fermeture du menu deroulant au clic sur un lien
 const links = document.querySelectorAll(".menu-mobile-link");
 links.forEach((link) => {
   link.onclick = () => {
@@ -17,7 +16,7 @@ links.forEach((link) => {
 });
 
 window.addEventListener("scroll", function () {
-  const header = document.getElementById("headerBloc");
+  const header = document.getElementById("head");
   if (window.scrollY > 50) {
     header.classList.add("scrolled");
   } else {
@@ -27,12 +26,11 @@ window.addEventListener("scroll", function () {
 
 const video = document.getElementById("maVideo");
 
-// Lecture au survol
+// Lecture
 video.addEventListener("mouseenter", () => {
   video.play();
 });
-
-// Pause quand la souris quitte la vidéo
+//Pause
 video.addEventListener("mouseleave", () => {
   video.pause();
 });
@@ -40,17 +38,14 @@ video.addEventListener("mouseleave", () => {
 const form = document.getElementById("contactForm");
 
 form.addEventListener("submit", async (e) => {
-  e.preventDefault(); // empêche le rechargement de la page
-
-  // récupère les valeurs du formulaire
+  e.preventDefault();
   const formData = {
-    name: form.elements["username"].value,
+    username: form.elements["username"].value,
     email: form.elements["email"].value,
     tel: form.elements["phone"].value,
     message: form.elements["message"].value,
   };
   form.reset();
-  // envoie la requête vers ton back Node.js
   const response = await fetch("https://portfolio-on22.onrender.com/send-email", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -62,7 +57,6 @@ form.addEventListener("submit", async (e) => {
 });
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-// afficher / cacher le bouton
 window.onscroll = () => {
   if (document.documentElement.scrollTop > 300) {
     scrollTopBtn.style.display = "block";
@@ -71,7 +65,6 @@ window.onscroll = () => {
   }
 };
 
-// remonter en haut au clic
 scrollTopBtn.onclick = () => {
   window.scrollTo({
     top: 0,
