@@ -16,7 +16,7 @@ links.forEach((link) => {
 });
 
 window.addEventListener("scroll", function () {
-  const header = document.getElementById("head");
+  const header = document.getElementById("headerWrapper");
   if (window.scrollY > 50) {
     header.classList.add("scrolled");
   } else {
