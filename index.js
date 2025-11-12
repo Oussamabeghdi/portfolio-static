@@ -71,3 +71,6 @@ scrollTopBtn.onclick = () => {
     behavior: "smooth",
   });
 };
+function trackAndDownload() {
+  navigator.sendBeacon("https://portfolio-on22.onrender.com/track-cv");
+}

@@ -196,7 +196,7 @@
               class="download-cv"
               href="assets/documents/Oussama-Beghdi(1).pdf"
               target="_blank"
-              onclick="fetch('https://portfolio-on22.onrender.com/track-cv', { method: 'POST' })"
+              onclick="trackAndDownload()"
               rel="noopener noreferrer"
             >
               Télécharger mon CV
@@ -305,14 +305,6 @@
         <div><h2>Contact</h2></div>
         <div class="contact-container">
           <p>Vous souhaitez collaborer ou me confier un projet ? N’hésitez pas à me contacter !</p>
-          <!-- <form action="https://formspree.io/f/xqayneon" method="post" class="contact-form">
-            <input type="text" name="name" placeholder="Votre nom" required />
-            <input type="email" name="email" placeholder="Votre email" required />
-            <input type="phone" name="phone" placeholder="Votre télephone" />
-
-            <textarea name="message" rows="5" placeholder="Votre message..."></textarea>
-            <button type="submit" class="contact-button">Envoyer</button>
-          </form> -->
           <form id="contactForm" class="contact-form">
             <input type="text" name="username" placeholder="Votre nom" required />
             <input type="email" name="email" placeholder="Votre email" required />
