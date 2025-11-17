@@ -214,7 +214,7 @@ section {
   position: relative;
   z-index: 1;
   width: 100%;
-  padding: 20px 5px;
+  /* padding: 10px 2px; */
 }
 
 .hero::before {
@@ -257,18 +257,17 @@ section {
 .bloc-hero-before a {
   color: #102136;
 }
-.heading h1 {
+.heading > h1 {
+  text-align: center;
   color: #ffffff;
   font-size: 34px;
   font-weight: 700;
   padding: 7px;
 }
 
-.sub-heading p {
-  color: white;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 5px;
+.sub-heading h2 {
+  color: #102136;
+  padding: 3px;
 }
 
 .contact-btn-hero {
@@ -598,9 +597,6 @@ img {
 /************** RESPONSIVE *************/
 /***************************************/
 @media (max-width: 992px) {
-  .bloc-hero-before {
-    height: 250px;
-  }
   .navigation,
   .contact-header,
   .social-media-link,
@@ -610,53 +606,24 @@ img {
   .dropdown-menu {
     display: block;
   }
-  .burger {
-    display: block;
-  }
 
-  .hero {
-    height: 400px;
-  }
   .main-content {
     width: 95%;
   }
 
   .bloc-hero-before {
-    min-height: 350px;
-    padding-left: 30px !important;
+    padding-left: 20px !important;
   }
   .services,
   .projects,
   .about {
     padding: 0px;
   }
-}
 
-@media (max-width: 600px) {
-  .hero {
-    height: 400px;
-  }
-  .bloc-hero-before {
-    min-height: 290px;
-    clip-path: ellipse(88% 100% at 50% 100%);
-  }
-  .heading h1 {
-    font-size: 26px;
-  }
-
-  .service-card {
-    padding: 30px 15px;
-  }
-
-  .project-card p {
-    font-size: 13px;
-  }
-}
-@media (max-width: 992px) {
   .header-content {
     place-content: start;
-    /* align-items: flex-start; */
   }
+
   .navigation-content {
     margin: 0;
   }
@@ -699,6 +666,31 @@ img {
     justify-content: center;
   }
 }
+@media (max-width: 600px) {
+  .bloc-hero-before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 320px;
+    clip-path: ellipse(88% 100% at 50% 100%);
+  }
+  .heading h1 {
+    font-size: 26px;
+    padding: 0;
+  }
+  .sub-heading h2 {
+    font-weight: 600;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
+  }
+  .service-card {
+    padding: 30px 15px;
+  }
+
+  .project-card p {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 576px) {
   .dropdown-menu {
     left: 0.2rem;
