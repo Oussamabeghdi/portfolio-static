@@ -214,7 +214,6 @@ section {
   position: relative;
   z-index: 1;
   width: 100%;
-  /* padding: 10px 2px; */
 }
 
 .hero::before {
@@ -225,7 +224,6 @@ section {
   width: 100%;
   height: 100%;
   background: url("../assets/images/public-domain-vectors-15uEH8-UoGI-unsplash.svg");
-  /* background: url("../assets/images/image_for_web_developer_portfolio_cqfm0u1r5u3grzcaipx1_3.png"); */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -678,10 +676,57 @@ img {
     font-size: 26px;
     padding: 0;
   }
-  .sub-heading h2 {
+  .sub-heading {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .slide-in {
+    font-size: 24px;
     font-weight: 600;
     text-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
+    animation: slideCenter 1.5s ease-out forwards;
   }
+
+  @keyframes slideCenter {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* .sub-heading {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .sub-heading h2 {
+    display: inline-block;
+    animation: scroll 7s linear infinite;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    } */
+  /* } */
+  /* .sub-heading h2 {
+    
+    -webkit-text-stroke: 1px white;
+    text-shadow: 0 0 2px white;
+  } */
   .service-card {
     padding: 30px 15px;
   }
