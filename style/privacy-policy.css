@@ -1,0 +1,99 @@
+/* ====== POLICE & RESET ====== */
+/* @import url("https://fonts.googleapis.com/css2?family=Alan:wght@300;400;600&display=swap"); */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== VARIABLES ====== */
+:root {
+  --blanc: #ffffff;
+  --jaune: #face4d;
+  --bleu: #102136;
+  --radius: 8px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --max: 860px;
+  --font: "Alan", sans-serif;
+}
+
+/* ====== BASE ====== */
+body {
+  font-family: var(--font);
+  background: var(--blanc);
+  color: var(--bleu);
+  line-height: 1.6;
+  padding: 2rem 1rem;
+}
+
+/* ====== CONTENEUR ====== */
+.privacy {
+  max-width: var(--max);
+  margin: auto;
+  background: var(--blanc);
+  border: 1px solid rgba(16, 33, 54, 0.1);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2.5rem 2rem;
+}
+
+/* ====== TITRES ====== */
+.privacy h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--bleu);
+  margin-bottom: 1rem;
+}
+.privacy h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--bleu);
+  margin: 1.5rem 0 0.5rem;
+  text-decoration: underline;
+}
+
+/* ====== TEXTE & LIENS ====== */
+.privacy p {
+  margin-bottom: 1rem;
+}
+.privacy a {
+  color: var(--jaune);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.privacy a:hover {
+  color: var(--bleu);
+}
+
+/* ====== BOUTON RETOUR ====== */
+.btn-retour {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.6rem 1.4rem;
+  background: var(--jaune);
+  color: var(--bleu);
+  border-radius: var(--radius);
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.btn-retour:hover {
+  background: #f9b931;
+}
+.back-to-home {
+  color: #102136;
+}
+.back-to-home:hover {
+  color: white;
+}
+.button-back-to-home {
+  background: #face4d;
+  padding: 0.7rem 1.7rem;
+  border: none;
+  border-radius: 75px;
+  cursor: pointer;
+  transition: scale;
+}
+.button-back-to-home:hover {
+  background: #102136;
+}
